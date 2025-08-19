@@ -1,0 +1,23 @@
+# Noto AI Assistant - Python Backend
+# Enhanced with CodeLlama 7B Instruct for better AI interpretation
+# 
+# Environment Variables Optional:
+# - NOTION_TOKEN (for Notion API integration - optional)
+# 
+# Local AI Requirements:
+# - Ollama installed locally
+# - CodeLlama model: ollama pull codellama:7b-instruct
+
+# Web Framework
+fastapi==0.95.2
+uvicorn==0.20.0
+pydantic==1.10.13
+
+# Hugging Face Serverless API
+requests==2.31.0
+
+# Configuration & Environment
+python-dotenv==1.0.0
+
+# Notion Integration (optional)
+notion-client==2.0.0
