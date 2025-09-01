@@ -1,5 +1,5 @@
-# Noto AI Assistant - Python Backend
-# Enhanced with CodeLlama 7B Instruct for better AI interpretation
+# Noto AI Assistant - Python Backend (Refactored)
+# Clean architecture with proper separation of concerns
 # 
 # Environment Variables Optional:
 # - NOTION_TOKEN (for Notion API integration - optional)
@@ -9,11 +9,14 @@
 # - CodeLlama model: ollama pull codellama:7b-instruct
 
 # Web Framework
-fastapi==0.95.2
-uvicorn==0.20.0
-pydantic==1.10.13
+fastapi==0.104.1
+uvicorn==0.24.0
 
-# Hugging Face Serverless API
+# Data Validation & Settings
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# HTTP Client
 requests==2.31.0
 
 # Configuration & Environment
