@@ -40,12 +40,16 @@ class Settings(BaseSettings):
     notion_token: Optional[str] = Field(default=None, alias="NOTION_TOKEN")
     notion_database_id: Optional[str] = Field(default=None, alias="NOTION_DATABASE_ID")
     
+    # Hugging Face settings (legacy, unused in current version)
+    huggingface_api_token: Optional[str] = Field(default=None, alias="HUGGINGFACE_API_TOKEN")
+    
     # Logging settings
     log_level: str = Field(default="INFO", alias="LOG_LEVEL")
     
     model_config = {
         "env_file": ".env",
-        "env_file_encoding": "utf-8"
+        "env_file_encoding": "utf-8",
+        "extra": "ignore"  # Ignore extra fields from environment
     }
 
 

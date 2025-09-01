@@ -43,4 +43,20 @@ temp/
 dist/
 build/
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+
+# Backend specific
 backend/.venv/
+backend/__pycache__/
