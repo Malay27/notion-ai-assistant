@@ -94,9 +94,9 @@ POSSIBLE ACTIONS:
 - addJob: Adding job applications
 - searchJob: Finding job applications
 
-PRIORITY LEVELS: high, medium, low
+PRIORITY LEVELS: highest, high, medium, low, lowest
 STATUS OPTIONS: not started, in progress, done
-DUE DATE FORMAT: particular date if this week/weekend/next week is specified then consider first day of the specified period
+DUE DATE FORMAT: particular date and if this week/weekend/next week is specified then consider first day of the specified period
 
 REQUIRED JSON FORMAT (MUST include "action" field):
 {{
